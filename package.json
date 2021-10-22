@@ -1,0 +1,30 @@
+{
+  "name": "cohort5-api",
+  "version": "1.0.0",
+  "description": "simple node api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armstrongsouljah/cohort5-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Armstrong - Code Queen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armstrongsouljah/cohort5-api/issues"
+  },
+  "homepage": "https://github.com/armstrongsouljah/cohort5-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
