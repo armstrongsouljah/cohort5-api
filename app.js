@@ -1,4 +1,5 @@
 const express = require('express');
+const cors =require('cors');
 require('dotenv').config()
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -14,8 +15,11 @@ const { WELCOME_MESSAGE, DATABASE_URL } = process.env
 const app = express();
 
 // load middleware
+app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true }))
+
+
 
 // load routes to app
 app.use('/todos', todoRoutes)
