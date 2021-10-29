@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 // route imports
 const todoRoutes = require('./routes/todoRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 const { PORT } = process.env 
 const { WELCOME_MESSAGE, DATABASE_URL } = process.env
@@ -23,6 +24,7 @@ app.use(bodyParser.urlencoded({extended: true }))
 
 // load routes to app
 app.use('/todos', todoRoutes)
+app.use('/auth', userRoutes)
 
 // spin up the server 
 mongoose.connect(DATABASE_URL).then(() => {
