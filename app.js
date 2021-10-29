@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // route imports
 const todoRoutes = require('./routes/todoRoutes');
 
-const { PORT } = process.env || 4000 
+const { PORT } = process.env 
 const { WELCOME_MESSAGE, DATABASE_URL } = process.env
 
 
