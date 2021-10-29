@@ -33,6 +33,6 @@
     "nodemon": "^2.0.14"
   },
   "engines": {
-    "node": "default"
+    "node": "12.11.1"
   }
 }
